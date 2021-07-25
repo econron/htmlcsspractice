@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <meta http-equiv="content-type" charset="UTF-8">
-<style>
-    .business_sidebar {
-        display: flex;
-        flex-direction: column;
-        max-width: 180px;
-    }
-    .box_button {
-        padding: 1em 1em;
-        font-weight: bold;
-        color: white;
-        background-color: dodgerblue;
-        border-radius: 5px;
-        border: solid 1px cornflowerblue;
-        margin: 1px;
-        text-align: center;
-        box-shadow: 1px 3px 6px darkgray;
-    }
-</style>
+<link rel="stylesheet" href="20210725.css">
 <body>
+<div class="onoffswitch">
+    <input type="checkbox" id="myonoffswitch" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
 <div class="business_sidebar">
     <button class="box_button">ダッシュボード</button>
     <button class="box_button">社員管理</button>
@@ -31,3 +21,4 @@
     <button class="box_button">API連携管理</button>
 </div>
 </body>
+<script type="text/javascript" src="20210725.js"></script>
